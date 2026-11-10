@@ -9,7 +9,7 @@
 <meta property="og:url" content="https://infosummit-sportcz.github.io/rozcestnik/">
 <meta property="og:description" content="Stylová horská móda. Recenze, e-shop, Instagram a prodejny.">
 <meta name="description" content="Stylová horská móda. Recenze, e-shop, Instagram a prodejny.">
-<meta property="og:image" content="https://infosummit-sportcz.github.io/rozcestnik/og-image.png?v=2">
+<meta property="og:image" content="https://infosummit-sportcz.github.io/rozcestnik/og-rozcestnik.png?v=10">
 <meta property="og:image:type" content="image/png">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:image:width" content="1200">
@@ -58,11 +58,13 @@ main { width: 100%; max-width: 520px; margin: 0 auto; flex: 1; display: flex; fl
   nav { display: flex; flex-direction: column; }
   .row {
     display: flex; align-items: center; gap: 20px;
-    padding: clamp(7px, calc(var(--u) * 2.4), 22px) 12px;
+    padding: clamp(7px, calc(var(--u) * 1.8), 22px) 12px;
     border-bottom: 1px solid var(--line);
     color: var(--white); text-decoration: none;
     transition: background-color .2s ease;
   }
+  .row:last-child { border-bottom: 0; }
+  .rule-end { margin-top: 0; }
   .row:hover { background: var(--hover); }
   .row:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
   .icon { width: 30px; height: 30px; flex: none; fill: none; stroke: var(--teal); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
@@ -71,7 +73,7 @@ main { width: 100%; max-width: 520px; margin: 0 auto; flex: 1; display: flex; fl
   .sub { font-size: 12.5px; color: var(--muted); letter-spacing: 0.02em; line-height: 1.35; }
   .arrow { width: 28px; height: 12px; flex: none; fill: none; stroke: var(--muted); stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; transition: transform .2s ease, stroke .2s ease; }
   .row:hover .arrow { stroke: var(--teal); transform: translateX(5px); }
-  footer { text-align: center; font-family: var(--display); font-size: 11px; letter-spacing: 0.24em; line-height: 1.6; text-transform: uppercase; color: var(--muted); }
+  footer { text-align: center; font-family: var(--display); font-size: 11px; letter-spacing: 0.24em; line-height: 1.6; text-transform: uppercase; color: var(--white); }
   @media (max-width: 380px) { .name { font-size: 14.5px; letter-spacing: 0.14em; } .row { gap: 16px; } }
   @media (prefers-reduced-motion: reduce) { .row, .arrow { transition: none; } }
 </style>
@@ -86,13 +88,8 @@ main { width: 100%; max-width: 520px; margin: 0 auto; flex: 1; display: flex; fl
   </header>
   <nav aria-label="Odkazy">
     <a class="row" href="https://g.page/r/CZHIQiowGlRxEAE/review" target="_blank" rel="noopener">
-      <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4l3.700 7.600 8.300 1.200-6 5.900 1.400 8.300L16 23.100 8.600 27l1.400-8.300-6-5.900 8.300-1.200z"/></svg>
+      <img class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmYzEwNyIgZD0iTTIxLjggMTBIMTJ2NGg1LjZBNiA2IDAgMSAxIDE2IDcuNWwyLjgtMi45YTEwIDEwIDAgMSAwIDMgNS40eiIvPjxwYXRoIGZpbGw9IiNmZjNkMDAiIGQ9Im0zLjEgNy4zIDMuMyAyLjRhNiA2IDAgMCAxIDkuNS0yLjNsMi45LTIuOEExMCAxMCAwIDAgMCAzLjEgNy4zeiIvPjxwYXRoIGZpbGw9IiM0Y2FmNTAiIGQ9Ik0xMiAyMmExMCAxMCAwIDAgMCA2LjctMi43bC0zLjEtMi42QTYgNiAwIDAgMSA2LjMgMTRsLTMuMiAyLjVBMTAgMTAgMCAwIDAgMTIgMjJ6Ii8+PHBhdGggZmlsbD0iIzE5NzZkMiIgZD0iTTIxLjggMTBIMTJ2NGg1LjZhNiA2IDAgMCAxLTIgMi43bDMuMSAyLjZjLS4yLjIgMy4zLTIuMyAzLjMtNy4zIDAtLjcgMC0xLjMtLjItMnoiLz48L3N2Zz4K" width="30" height="30" alt="">
       <span class="text"><span class="name">Zanechte recenzi</span><span class="sub">Hodnocení na Googlu</span></span>
-      <svg class="arrow" viewBox="0 0 28 12" aria-hidden="true"><path d="M0 6h26M21 1l5 5-5 5"/></svg>
-    </a>
-    <a class="row" href="https://obchody.heureka.cz/summit-sport-cz/recenze/" target="_blank" rel="noopener">
-      <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 6h22v16H15l-6 5v-5H5z"/><path d="M11.500 14l3.200 3.200 6-6.200"/></svg>
-      <span class="text"><span class="name">Heureka</span><span class="sub">Recenze našich zákazníků</span></span>
       <svg class="arrow" viewBox="0 0 28 12" aria-hidden="true"><path d="M0 6h26M21 1l5 5-5 5"/></svg>
     </a>
     <a class="row" href="https://www.summit-sport.cz/" target="_blank" rel="noopener">
@@ -100,17 +97,28 @@ main { width: 100%; max-width: 520px; margin: 0 auto; flex: 1; display: flex; fl
       <span class="text"><span class="name">E-shop</span><span class="sub">Mrkněte na náš e-shop</span></span>
       <svg class="arrow" viewBox="0 0 28 12" aria-hidden="true"><path d="M0 6h26M21 1l5 5-5 5"/></svg>
     </a>
-    <a class="row" href="https://www.instagram.com/summitsportczsk/" target="_blank" rel="noopener">
-      <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="5" width="22" height="22" rx="6"/><circle cx="16" cy="16" r="5"/><circle cx="22.300" cy="9.700" r="0.600"/></svg>
-      <span class="text"><span class="name">Instagram</span><span class="sub">Sledujte nás</span></span>
-      <svg class="arrow" viewBox="0 0 28 12" aria-hidden="true"><path d="M0 6h26M21 1l5 5-5 5"/></svg>
-    </a>
     <a class="row" href="https://www.summit-sport.cz/prodejny/" target="_blank" rel="noopener">
       <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 28s9-8.300 9-15a9 9 0 0 0-18 0c0 6.700 9 15 9 15z"/><circle cx="16" cy="13" r="3.200"/></svg>
       <span class="text"><span class="name">Naše prodejny</span><span class="sub">Seznam prodejen</span></span>
       <svg class="arrow" viewBox="0 0 28 12" aria-hidden="true"><path d="M0 6h26M21 1l5 5-5 5"/></svg>
     </a>
+    <a class="row" href="https://obchody.heureka.cz/summit-sport-cz/recenze/" target="_blank" rel="noopener">
+      <img class="icon" src="data:image/png;base64,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" width="30" height="30" alt="">
+      <span class="text"><span class="name">Heureka</span><span class="sub">Recenze našich zákazníků</span></span>
+      <svg class="arrow" viewBox="0 0 28 12" aria-hidden="true"><path d="M0 6h26M21 1l5 5-5 5"/></svg>
+    </a>
+    <a class="row" href="https://www.instagram.com/summitsportczsk/" target="_blank" rel="noopener">
+      <img class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgeG1sbnM6dj0iaHR0cHM6Ly92ZWN0YS5pby9uYW5vIj48bGluZWFyR3JhZGllbnQgaWQ9IkEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCIgeTE9IjI0IiB4Mj0iNDgiIHkyPSIyNCI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmQ1Ii8+PHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0iI2ZmNTQzZSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2M4MzdhYiIvPjwvbGluZWFyR3JhZGllbnQ+PGNpcmNsZSBjeD0iMjQiIGN5PSIyNCIgcj0iMjQiIGZpbGw9InVybCgjQSkiLz48cGF0aCBkPSJNMjQgMTEuNWMtNS4zIDAtMTAuNC0uNS0xMi40IDQuMy0uOCAyLS43IDQuNS0uNyA4LjIgMCAzLjItLjEgNi4yLjcgOC4yIDEuOSA0LjggNy4xIDQuMyAxMi40IDQuMyA1LjEgMCAxMC40LjUgMTIuNC00LjMuOC0yIC43LTQuNS43LTguMiAwLTQuOS4zLTgtMi4yLTEwLjRTMjkgMTEuNSAyNCAxMS41aDB6bS0xLjIgMi4yYzExLjIgMCAxMi42LTEuMiAxMS44IDE1LjMtLjMgNS44LTQuOSA1LjItMTAuNiA1LjItMTAuNCAwLTEwLjctLjItMTAuNy0xMC4yIDAtMTAuMS44LTEwLjIgOS41LTEwLjNoMHptOC4yIDIuMWMtLjkgMC0xLjYuNy0xLjYgMS41cy43IDEuNSAxLjYgMS41IDEuNi0uNyAxLjYtMS41LS44LTEuNS0xLjYtMS41em0tNyAxLjhjLTMuNyAwLTYuNyAyLjktNi43IDYuNHMzIDYuNCA2LjcgNi40IDYuNy0yLjkgNi43LTYuNC0zLTYuNC02LjctNi40aDB6bTAgMi4yYzUuOCAwIDUuOCA4LjMgMCA4LjMtNS44LjEtNS44LTguMyAwLTguM3oiIGZpbGw9IiNmZmYiLz48L3N2Zz4=" width="30" height="30" alt="">
+      <span class="text"><span class="name">Instagram</span><span class="sub">Sledujte nás</span></span>
+      <svg class="arrow" viewBox="0 0 28 12" aria-hidden="true"><path d="M0 6h26M21 1l5 5-5 5"/></svg>
+    </a>
+    <a class="row" href="https://www.facebook.com/summitsportczsk" target="_blank" rel="noopener">
+      <img class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA2NjYuNjcgNjY2LjY3IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJhIj4KPHBhdGggZD0ibTAgNzAwaDcwMHYtNzAwaC03MDB6Ii8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPGcgdHJhbnNmb3JtPSJtYXRyaXgoMS4zMzMzIDAgMCAtMS4zMzMzIC0xMzMuMzMgODAwKSI+CjxnIGNsaXAtcGF0aD0idXJsKCNhKSI+CjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYwMCwzNTApIj4KPHBhdGggZD0ibTAgMGMwIDEzOC4wNy0xMTEuOTMgMjUwLTI1MCAyNTBzLTI1MC0xMTEuOTMtMjUwLTI1MGMwLTExNy4yNCA4MC43MTUtMjE1LjYyIDE4OS42MS0yNDIuNjR2MTY2LjI0aC01MS41NTJ2NzYuMzk2aDUxLjU1MnYzMi45MTljMCA4NS4wOTIgMzguNTA4IDEyNC41MyAxMjIuMDUgMTI0LjUzIDE1LjgzOCAwIDQzLjE2Ny0zLjEwNSA1NC4zNDctNi4yMTF2LTY5LjI1NGMtNS45MDEgMC42MjEtMTYuMTQ5IDAuOTMyLTI4Ljg4MiAwLjkzMi00MC45OTMgMC01Ni44MzItMTUuNTI4LTU2LjgzMi01NS45di0yNy4wMThoODEuNjU5bC0xNC4wMjgtNzYuMzk2aC02Ny42MzF2LTE3MS43N2MxMjMuNzkgMTQuOTUxIDIxOS43MSAxMjAuMzUgMjE5LjcxIDI0OC4xNyIgZmlsbD0iIzA4NjZmZiIvPgo8L2c+CjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ0Ny45MiAyNzMuNikiPgo8cGF0aCBkPSJtMCAwIDE0LjAyOSA3Ni4zOTZoLTgxLjY1OXYyNy4wMTljMCA0MC4zNzIgMTUuODM4IDU1Ljg5OSA1Ni44MzEgNTUuODk5IDEyLjczMyAwIDIyLjk4MS0wLjMxIDI4Ljg4Mi0wLjkzMXY2OS4yNTNjLTExLjE4IDMuMTA2LTM4LjUwOSA2LjIxMi01NC4zNDcgNi4yMTItODMuNTM5IDAtMTIyLjA1LTM5LjQ0MS0xMjIuMDUtMTI0LjUzdi0zMi45MTloLTUxLjU1MnYtNzYuMzk2aDUxLjU1MnYtMTY2LjI0YzE5LjM0My00Ljc5OCAzOS41NjgtNy4zNjIgNjAuMzk0LTcuMzYyIDEwLjI1NCAwIDIwLjM1OCAwLjYzMiAzMC4yODggMS44MzF2MTcxLjc3eiIgZmlsbD0iI2ZmZiIvPgo8L2c+CjwvZz4KPC9nPgo8L3N2Zz4K" width="30" height="30" alt="">
+      <span class="text"><span class="name">Facebook</span><span class="sub">Přidejte se k nám</span></span>
+      <svg class="arrow" viewBox="0 0 28 12" aria-hidden="true"><path d="M0 6h26M21 1l5 5-5 5"/></svg>
+    </a>
   </nav>
+  <div class="rule rule-end" aria-hidden="true"></div>
   <footer>Špindlerův Mlýn · Praha · E-shop</footer>
 </main>
 </body>
